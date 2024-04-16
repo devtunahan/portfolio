@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link } from "react-router-dom";
-import { HomeIcon, LightningBoltIcon, PencilIcon, UserCircleIcon, MailIcon } from '@heroicons/react/outline';
+import { HomeIcon, LightningBoltIcon, PencilIcon, UserCircleIcon, MailIcon, DocumentDownloadIcon, DocumentIcon } from '@heroicons/react/outline';
 
 function Navbar() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -16,6 +16,21 @@ function Navbar() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    // Set the href attribute to the path of your resume file
+    link.href = './assets/cv.pdf';
+    // Set the download attribute to prompt the browser to download the file
+    link.setAttribute('download', 'cv.pdf');
+    // Append the link to the document body
+    document.body.appendChild(link);
+    // Programmatically click the link to trigger the download
+    link.click();
+    // Clean up by removing the link from the document body
+    document.body.removeChild(link);
+};
 
   return (
     <div className={`fixed ${isSmallScreen ? 'bottom-0 left-0 w-full flex justify-center' : 'top-0 left-0 h-full flex justify-start items-center'} ml-2 mb-2`}>
@@ -35,12 +50,14 @@ function Navbar() {
 
                 </Link>
               </li>
+              {/*
               <li>
                 <Link to="/journal" className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
                   <PencilIcon className="w-6 h-6" />
 
                 </Link>
               </li>
+              */}
               <li>
                 <Link to="/about" className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
                   <UserCircleIcon className="w-6 h-6" />
@@ -51,6 +68,11 @@ function Navbar() {
                 <Link to="/contact" className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
                   <MailIcon className="w-6 h-6" />
 
+                </Link>
+              </li>
+              <li>
+                <Link to="#" onClick={handleDownload} className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
+                  <DocumentDownloadIcon className="w-6 h-6 pulsate" />
                 </Link>
               </li>
             </ul>

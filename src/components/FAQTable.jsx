@@ -22,10 +22,10 @@ function FAQTable() {
         <Link to="/projects">
             <FAQTableItem letter="A" text="I heard you design & build digital products!" arrow={<ArrowNarrowRightIcon className='w-5 h-5'/>} />
         </Link>
-        <Link to="/journal">
-      <FAQTableItem letter="B" text="You have a personal journal?" arrow={<ArrowNarrowRightIcon className='w-5 h-5'/>} />
+        <Link to="/contact">
+      <FAQTableItem letter="B" text="Contact me? No problem!" arrow={<ArrowNarrowRightIcon className='w-5 h-5'/>} />
       </Link>
-      <Link  to="/contact">
+      <Link  to="/about">
       <FAQTableItem letter="C" text="Tunahan, who?" arrow={<ArrowNarrowRightIcon className='w-5 h-5'/>} />
       </Link>
     </div>

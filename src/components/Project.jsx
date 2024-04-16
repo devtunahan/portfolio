@@ -52,8 +52,13 @@ function Project({ img, title, subtitle, description, github, demo }) {
                     variants={desktopVariant}
                 >
                     <div className='md:w-64 md:mr-8 text-white hover:opacity-90'>
-                        <img src={img}
-                            className="h-auto w-full rounded-lg" alt="Project Image" />
+                        <motion.img
+                            src={img}
+                            className="h-auto w-full rounded-lg"
+                            alt="Project Image"
+                            whileHover={{ scale: 2.1 }}
+                            transition={{ duration: 0.2 }}
+                        />
                     </div>
                     <div className='text-white'>
                         <h2 className='text-xl'>{title}</h2>

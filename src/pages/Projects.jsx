@@ -1,25 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import Project from '../components/Project';
-import axios from 'axios';
 
-const baseUrl = 'http://localhost:3000'; // Base URL for both API and image
 
 function Projects() {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([
+        
+
+    ]);
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-
-        const fetchData = async () => {
-            try {
-                const response = await axios.get(`${baseUrl}/api/projects`); // Fetch data from the server
-                setProjects(response.data); // Set projects state with fetched data
-            } catch (error) {
-                console.error('Error fetching projects:', error);
-            }
-        };
-
-        fetchData(); // Call fetchData function on component mount
+//TODO: Add the projects here
+      setProjects([
+        {
+            id:1,
+            img:"../assets/projectImages/portfolio.png",
+            title:"Portfolio Website",
+            subtitle:"Web Application",
+            description:"My personal portfolio website with React and TailwindCSS. It also exist a UI for backend",
+            github:"https://github.com/devtunahan/portfolio",
+            demo:"https://tunahan.at"
+        },
+        {
+            id:2,
+            img:"../assets/projectImages/todoflow.png",
+            title:"Todoflow",
+            subtitle:"Web Application",
+            description:"Simple Todo Application, build with MERN stack, local development",
+            github:"https://github.com/devtunahan/todoflow",
+            demo:""
+        },
+        {
+            id:3,
+            img:"../assets/projectImages/techaid.png",
+            title:"Techaid",
+            subtitle:"Web Application",
+            description:"market research form to see where companies stand in terms of technology. It was developed using the MERN Stack. The form is in german for now",
+            github:"",
+            demo:""
+        },
+      ])
     }, []);
 
     useEffect(() => {
@@ -48,8 +68,9 @@ function Projects() {
             <h1 className="text-3xl p-10">Projects</h1>
             {projects.map((project, index) => (
                 <div key={index} className={`fade-in-up ${isVisible ? 'visible' : ''}`}>
+                    {/*add correct image from assets*/}
                     <Project
-                        img={`${baseUrl}${project.image}`} // Concatenate base URL with image URL
+                        img={project.img}
                         title={project.title}
                         subtitle={project.subtitle}
                         description={project.description}
