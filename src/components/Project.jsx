@@ -30,7 +30,7 @@ function Project({ img, title, subtitle, description, github, demo }) {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 },
     };
-
+    
     return (
         <motion.div
             className='mt-8 px-4'

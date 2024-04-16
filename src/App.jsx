@@ -12,7 +12,7 @@ import AnimatedBackground from "./components/AnimatedBackground";
 function App() {
     return (
         <>
-            <AnimatedBackground />
+        <AnimatedBackground />
             <div className="app">
                 <BrowserRouter>
                     <div className="flex">
