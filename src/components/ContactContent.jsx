@@ -24,9 +24,9 @@ function ContactContent() {
         <a href="https://cal.com/tunahan/15min" target="_blank" className='p-4 rounded-lg border border-gray-800 transition-opacity hover:opacity-60'>Book a call</a>
        </div>
        <div className='text-sm flex flex-row'>
-        <a href="" className='mr-5 link hover:text-gray-400' target='_blank'>GitHub</a>
-        <a href="" className='mr-5 link hover:text-gray-400' target='_blank'>LinkedIn</a>
-        <a href="" className='link hover:text-gray-400'target='_blank'>Instagram</a>
+        <a href="https://github.com/devtunahan" className='mr-5 link hover:text-gray-400' target='_blank'>GitHub</a>
+        <a href="https://www.linkedin.com/in/tunahan-karakaya/" className='mr-5 link hover:text-gray-400' target='_blank'>LinkedIn</a>
+        <a href="https://www.instagram.com/tunahan.at/" className='link hover:text-gray-400'target='_blank'>Instagram</a>
        </div>
     </div>
     </>
