@@ -67,12 +67,6 @@ function Navbar() {
               <li>
                 <Link to="/contact" className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
                   <MailIcon className="w-6 h-6" />
-
-                </Link>
-              </li>
-              <li>
-                <Link to="#" onClick={handleDownload} className="flex items-center text-slate-300 hover:text-slate-500 active:text-white p-4 rounded-md">
-                  <DocumentDownloadIcon className="w-6 h-6 pulsate" />
                 </Link>
               </li>
             </ul>
