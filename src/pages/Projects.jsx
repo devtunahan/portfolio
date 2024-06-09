@@ -39,6 +39,24 @@ function Projects() {
             github:"",
             demo:""
         },
+        {
+            id:4,
+            img:"/assets/projectImages/login.png",
+            title:"Login/Register Boilerplate",
+            subtitle:"Web Application",
+            description:"My Login/Register boilerplate with E-mail verification and self written user authentication, using express.js on the backend and React with TailwindCSS and DaisyUI on the frontend.",
+            github:"",
+            demo:""
+        },
+        {
+            id:5,
+            img:"/assets/projectImages/timeloom.png",
+            title:"Timeloom",
+            subtitle:"Web Application",
+            description:"Time tracking application for freelancers, where you can book time on projects. It was developed using the MERN Stack. Still in development.",
+            github:"",
+            demo:""
+        },
       ])
     }, []);
 
