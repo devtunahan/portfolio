@@ -14,7 +14,7 @@ function Projects() {
       setProjects([
         {
             id:1,
-            img:"/assets/projectImages/timeloom.png",
+            img:"/timeloom.png",
             title:"Timeloom",
             subtitle:"Web Application",
             description:"Time tracking application for freelancers, where you can book time on projects. It was developed using the MERN Stack. Still in development.",
@@ -23,7 +23,7 @@ function Projects() {
         },
         {
             id:2,
-            img:"/assets/projectImages/tu-solutions.png",
+            img:"/tu-solutions.png",
             title:"Landingspage TU-Solutions",
             subtitle:"Web Application",
             description:"Landing page for TU Solutions, made with React and TailwindCSS. It is a responsive website.",
@@ -32,7 +32,7 @@ function Projects() {
         },
         {
             id:3,
-            img:"/assets/projectImages/portfolio.png",
+            img:"/portfolio.png",
             title:"Portfolio Website",
             subtitle:"Web Application",
             description:"My personal portfolio website with React and TailwindCSS. It also exist a UI for backend",
@@ -41,7 +41,7 @@ function Projects() {
         },
         {
             id:4,
-            img:"/assets/projectImages/todoflow.png",
+            img:"/todoflow.png",
             title:"Todoflow",
             subtitle:"Web Application",
             description:"Simple Todo Application, build with MERN stack, local development",
@@ -50,7 +50,7 @@ function Projects() {
         },
         {
             id:5,
-            img:"/assets/projectImages/techaid.png",
+            img:"/techaid.png",
             title:"Techaid",
             subtitle:"Web Application",
             description:"market research form to see where companies stand in terms of technology. It was developed using the MERN Stack. The form is in german for now",
@@ -59,7 +59,7 @@ function Projects() {
         },
         {
             id:6,
-            img:"/assets/projectImages/login.png",
+            img:"/login.png",
             title:"Login/Register Boilerplate",
             subtitle:"Web Application",
             description:"My Login/Register boilerplate with E-mail verification and self written user authentication, using express.js on the backend and React with TailwindCSS and DaisyUI on the frontend.",
