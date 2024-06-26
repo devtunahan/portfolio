@@ -14,6 +14,24 @@ function Projects() {
       setProjects([
         {
             id:1,
+            img:"/assets/projectImages/timeloom.png",
+            title:"Timeloom",
+            subtitle:"Web Application",
+            description:"Time tracking application for freelancers, where you can book time on projects. It was developed using the MERN Stack. Still in development.",
+            github:"",
+            demo:""
+        },
+        {
+            id:2,
+            img:"/assets/projectImages/tu-solutions.png",
+            title:"Landingspage TU-Solutions",
+            subtitle:"Web Application",
+            description:"Landing page for TU Solutions, made with React and TailwindCSS. It is a responsive website.",
+            github:"",
+            demo:"https://tu-solutions.com"
+        },
+        {
+            id:3,
             img:"/assets/projectImages/portfolio.png",
             title:"Portfolio Website",
             subtitle:"Web Application",
@@ -22,7 +40,7 @@ function Projects() {
             demo:"https://tunahan.at"
         },
         {
-            id:2,
+            id:4,
             img:"/assets/projectImages/todoflow.png",
             title:"Todoflow",
             subtitle:"Web Application",
@@ -31,7 +49,7 @@ function Projects() {
             demo:""
         },
         {
-            id:3,
+            id:5,
             img:"/assets/projectImages/techaid.png",
             title:"Techaid",
             subtitle:"Web Application",
@@ -40,23 +58,14 @@ function Projects() {
             demo:""
         },
         {
-            id:4,
+            id:6,
             img:"/assets/projectImages/login.png",
             title:"Login/Register Boilerplate",
             subtitle:"Web Application",
             description:"My Login/Register boilerplate with E-mail verification and self written user authentication, using express.js on the backend and React with TailwindCSS and DaisyUI on the frontend.",
             github:"",
             demo:""
-        },
-        {
-            id:5,
-            img:"/assets/projectImages/timeloom.png",
-            title:"Timeloom",
-            subtitle:"Web Application",
-            description:"Time tracking application for freelancers, where you can book time on projects. It was developed using the MERN Stack. Still in development.",
-            github:"",
-            demo:""
-        },
+        }
       ])
     }, []);
 

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import hljs from 'highlight.js'; // Import hljs library
-import 'highlight.js/styles/atom-one-dark.css'; // Import a style for hljs
 
 function JournalPost() {
     const { slug } = useParams();
